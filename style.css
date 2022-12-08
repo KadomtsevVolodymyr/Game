@@ -1,0 +1,131 @@
+body{
+display: flex;
+height: 100%;
+}
+.user {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.user__name {
+   width: 200px;
+   text-align: center;
+   color: white;
+   font-size: 25px;
+}
+.user__score {
+   color: white;
+   font-size: 20px;
+   height: 50px;
+   width: 200px;
+   border-radius: 5px;
+   background-color: black;
+   display: flex;
+   gap: 15px;
+     justify-content: center;
+  align-items: center;
+}
+.user__generate {
+   margin-top: 50px;
+   width: 200px;
+   height: 200px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.generate {
+}
+.robot {
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
+.robot__name {
+   width: 200px;
+   text-align: center;
+   color: white;
+   font-size: 25px;
+}
+.robot__score {
+   color: white;
+   font-size: 20px;
+   height: 50px;
+   width: 200px;
+   border-radius: 5px;
+   background-color: blue;
+   display: flex;
+   gap: 15px;
+     justify-content: center;
+  align-items: center;
+}
+.robot__generate {
+   margin-top: 50px;
+   width: 200px;
+   height: 200px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+.left{
+   background-color:blueviolet;
+width: 50%;
+height: 100%;
+display: flex;
+   gap: 15px;
+     justify-content: center;
+  align-items: center;
+}
+.right{
+   background-color: black;
+   width: 50%;
+   display: flex;
+   gap: 15px;
+     justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+.rotate-scale-up {
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+@media (max-width:520px) {
+   body{
+      flex-direction: column;
+   }
+   .left{
+      width: 100%;
+   }
+   .right{
+      width: 100%;
+   }
+}
